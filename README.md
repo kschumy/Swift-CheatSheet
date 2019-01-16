@@ -1,15 +1,6 @@
 ## Swift 3+ Cheat Sheet
 
-Want to help improve this? File an issue or open a pull request! :)
-
-This is not meant to be a beginner's guide or a detailed discussion about Swift; it is meant to be a quick reference to common, high level topics.
-
-* Read the [Objective-C](https://github.com/iwasrobbed/Objective-C-CheatSheet) cheatsheet as well.
-
-**Note**: This was written this fairly quickly, mostly to teach myself Swift, so it still needs a lot of love and there are important sections still missing. Please feel free to edit this document to update or improve upon it, making sure to keep with the general formatting of the document.  The list of contributors can be [found here](https://github.com/iwasrobbed/Swift-CheatSheet/graphs/contributors).
-
-If something isn't mentioned here, it's probably covered in detail in one of these:
-
+* Read the [Objective-C](https://github.com/iwasrobbed/Objective-C-CheatSheet) cheatsheet
 * [Apple: A Swift Tour](https://developer.apple.com/library/mac/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * [Apple: Swift Programming Language](https://developer.apple.com/library/mac/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-XID_467)
 * [Apple iBooks: Swift Programming Language](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
@@ -20,7 +11,6 @@ If something isn't mentioned here, it's probably covered in detail in one of the
 
 ### Table of Contents
 
-* [Commenting](#commenting)
 * [Data Types](#data-types)
 * [Operators](#operators)
 * [Operator Overloading](#operator-overloading)
@@ -40,68 +30,6 @@ If something isn't mentioned here, it's probably covered in detail in one of the
 * [Common Patterns](#common-patterns)
 * [Unicode Support](#unicode-support)
 
-## Commenting
-
-Comments should be used to organize code and to provide extra information for future refactoring or for other developers who might be reading your code.  Comments are ignored by the compiler so they do not increase the compiled program size.
-
-Two ways of commenting:
-
-```swift
-// This is an inline comment
-
-/* This is a block comment
-   and it can span multiple lines. */
-
-// You can also use it to comment out code
-/*
-func doWork() {
-  // Implement this
-}
-*/
-```
-
-### MARK
-
-Using `MARK` to organize your code:
-
-```swift
-// MARK: - Use mark to logically organize your code
-
-// Declare some functions or variables here
-
-// MARK: - They also show up nicely in the properties/functions list in Xcode
-
-// Declare some more functions or variables here
-```
-
-### FIXME
-
-Using `FIXME` to remember to fix your code:
-
-```swift
-// Some broken code might be here
-
-// FIXME: Use fixme to create a reminder to fix broken code later
-```
-
-`FIXME` works a lot like `MARK` because it makes organizing code easier, but it's used exclusively when you need to remember to fix something.
-
-### TODO
-
-Using `TODO` to remember to add, delete, or generally refactor your code:
-
-````swift
-// Some incomplete code might be here
-
-// TODO: Use todo to create a reminder to finish things up later
-````
-
-`TODO` is very similar to `FIXME` and `MARK`, but it's used exclusively when you need to remember to add, delete, or change your code later.
-
-**Auto-generating method documentation:**
-In a method's preceding line, press `⌥ Option + ⌘ Command + /` to automatically generate a documentation stub for your method.
-
-[Back to top](#swift-3-cheat-sheet)
 
 ## Data Types
 
